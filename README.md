@@ -14,7 +14,7 @@
 ## Features
 
 - **Relieves stress** when browsing feels too heavy :)
-- **Fetches random jokes** from the [Official Joke API]([https://v2.jokeapi.dev/](https://official-joke-api.appspot.com/jokes/random) API.
+- **Fetches random jokes** from the [Official Joke API]([https://official-joke-api.appspot.com/jokes/random]) API.
 - **Clean and accessible UI** with an intuitive button to show the next joke.
 - **Responsive design** that works smoothly on any screen size.
 - **User-friendly feedback** in case the joke API is unavailable. 
