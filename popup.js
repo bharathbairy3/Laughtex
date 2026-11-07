@@ -3,14 +3,14 @@ document.getElementById('laughBtn').addEventListener('click', () => {
   const firstClick = document.querySelector('.firstClick');
   const jokeBox = document.querySelector('.jokeBox');
 
-  fetch('https://v2.jokeapi.dev/joke/Any?type=single', {
+  fetch('https://official-joke-api.appspot.com/jokes/random', {
     headers: {
       'Accept': 'application/json'
     }
   })
     .then(response => response.json())
     .then(data => {
-      document.getElementById('joke').textContent = data.joke;
+      document.getElementById('joke').innerHTML = `${data.setup} <br><br> ${data.punchline}`;
       firstClick.textContent = 'Next';
       jokeBox.style.display = 'block';
     })
@@ -44,5 +44,5 @@ const gradients = [
 
 document.addEventListener('DOMContentLoaded', () => {
   const jokeBox = document.querySelector('.jokeBox');
-  jokeBox.style.background = gradients[Math.floor(Math.random() * gradients.length)];
+  jokeBox.style.background = "#fff8e1";
 });
